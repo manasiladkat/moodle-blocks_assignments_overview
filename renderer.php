@@ -105,7 +105,7 @@ class block_assignments_overview_renderer extends plugin_renderer_base
     }
 
     function get_icons() {
-        $assignment_icon = new image_icon('icon', get_string('assignment', 'block_assignments_overview'), 'mod_assignment');
+        $assignment_icon = new pix_icon('icon', get_string('assignment', 'block_assignments_overview'), 'mod_assignment');
         $assignment_icon_html = $this->output->render($assignment_icon);
 
         $graded_assignment_icon = new pix_icon('greensquare',get_string('graded', 'block_assignments_overview'),'block_assignments_overview', array('class' => 'assignment_status_img'));
